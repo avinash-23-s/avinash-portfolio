@@ -517,3 +517,7 @@ body {
         display: none; /* Hide menu toggle on desktops */
     }
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
