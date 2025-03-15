@@ -517,6 +517,22 @@ body {
         display: none; /* Hide menu toggle on desktops */
     }
 }
+.nav {
+    display: none; /* Initially hide the menu */
+    /* ... other nav styles ... */
+}
+
+.nav.show {
+    display: flex; /* Show the menu when the "show" class is present */
+    flex-direction: column; /* Display menu items vertically */
+    /* ... any other styles for the expanded menu ... */
+}
+
+@media (min-width: 769px) { /* Or your desktop breakpoint */
+    .nav {
+        display: flex; /* Always show on desktop */
+    }
+}
 img {
     max-width: 100%;
     height: auto;
